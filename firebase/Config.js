@@ -13,8 +13,7 @@ import {
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
 
 // https://docs.expo.dev/guides/environment-variables/  
-// !!! Do not store sensitive info, such as private keys, in EXPO_PUBLIC_ variables.
-//  These variables will be visible in plain-text in your compiled application. :P
+
 const firebaseConfig = {
   apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
   authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN,

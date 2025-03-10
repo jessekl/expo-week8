@@ -5,9 +5,6 @@ import useItems from "../hooks/useItems";
 
 const ListScreen = () => {
   const { items, isLoading, error } = useItems()
-  
-
-  const handleRemoveItem = (id) => {};
 
   return (
     <View style={styles.container}>
@@ -16,7 +13,7 @@ const ListScreen = () => {
         <FlatList
           data={items}
           renderItem={({ item }) => (
-            <Row item={item} handleRemoveItem={handleRemoveItem} />
+            <Row item={item} />
           )}
           keyExtractor={(item) => item.id}
           style={styles.list}
